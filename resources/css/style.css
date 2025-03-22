@@ -1,0 +1,51 @@
+button {
+    border: none;
+    color: white;
+    background-color: peru;
+    padding: 20px;
+    font-size: 18px;
+    transition-duration: 0.5s;
+}
+button:hover {
+    background-color: wheat;
+}
+
+img {
+    width: 400px
+}
+
+.flex-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+p {
+    background-color: wheat;
+    width: 20%;
+} 
+
+div p {
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    width: auto;
+    max-width: 100%;
+}
+
+.grid-container {
+    display: inline-grid;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    grid-auto-flow: column;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-auto-flow: row;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
